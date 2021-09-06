@@ -1,0 +1,55 @@
+lane :test do
+  flutter_version_pubspec(
+    arguments: "-major",
+    yml: "./version.yml",
+    pubspec: "./example_pubspec.yaml")
+end
+
+lane :bump_major do
+  flutter_version_pubspec(
+    arguments: "-major",
+    yml: "./version.yml",
+    pubspec: "./example_pubspec.yaml")
+end
+
+lane :bump_minor do
+  flutter_version_pubspec(
+    arguments: "-minor",
+    yml: "./version.yml",
+    pubspec: "./example_pubspec.yaml")
+end
+
+lane :bump_patch do
+  flutter_version_pubspec(
+    arguments: "-patch",
+    yml: "./version.yml",
+    pubspec: "./example_pubspec.yaml")
+end
+
+lane :read_version do
+  flutter_version_pubspec(
+    arguments: "-version",
+    yml: "./version.yml",
+    pubspec: "./example_pubspec.yaml")
+end
+
+lane :read_code do
+  flutter_version_pubspec(
+    arguments: "-code",
+    yml: "./version.yml",
+    pubspec: "./example_pubspec.yaml")
+end
+
+lane :apply_new_version do
+  flutter_version_pubspec(
+    arguments: "-apply",
+    yml: "./version.yml",
+    pubspec: "./example_pubspec.yaml")
+end
+
+lane :get_help do
+  flutter_version_pubspec(
+    arguments: "-h",
+    yml: "./version.yml",
+    pubspec: "./example_pubspec.yaml")
+end
